@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&family=Russo+One&family=Tinos&display=swap" rel="stylesheet">
+    <title>Tank Game</title>
+</head>
+<body>
+    <div class="wrapper">
+        <video class="background-video" src="./images/mylivewallpapers.com-War-Tank.mp4" autoplay loop></video>
+         <div class="pop_up open">
+            <div class="pop_row">
+                <div class="pop_text">
+                    <h3 class="pop_title">
+                        WELCOME
+                    </h3>
+                    <div class="pop_desc">
+                        <p>
+                            In this game you have <br> to collect enough tank bullets <br> to destroy the enemy castle <span class="pop_marked">in 30 seconds</span>.
+                        </p>
+                    </div>
+                </div>
+                <div class="pop_button pop_close">
+                    <p class="pop_button_title">
+                        START
+                    </p>
+                </div>
+            </div>
+         </div>
+        <div class="title_game">
+            <h1 class="title">
+               FIND  <span class="pop_marked">BULLETS</span>  TO THE TANK <br>
+               <!-- <p class="time_text"> <span class="pop_marked">!! HURRY UP !!</span> </p> -->
+            </h1>
+        </div>
+        <table class="table">
+
+        </table>
+        <div class="bottom_buttons">
+        <button class="restart_button" onClick="window.location.reload();">
+            <div class="restart_text">
+                <p>RESTART</p>
+            </div>
+        </button>
+        <div class="col">
+            <div class="bullet_num">
+                <p class="text">You found: <span class="bullet_count">0</span> bullets</p>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="restart_text">
+            <p>You have <span class="text time_count">00:00</span> left</p>
+        </div>
+        </div>
+        <div class="modal">
+            <div class="modal_panel">
+              <div class="modal_text">
+                <h3 class="pop_title">
+                    <span class="pop_marked">!! TIME IS UP!!</span>
+                </h3>
+                <h1 class="modal_desc">
+                    Congratulations you destroyed <br> the enemy <br> castle!
+                </h1>
+              </div>
+              <div class="col">
+                <div class="bullet_num">
+                    <p class="text">You found: <span class="bullet_count">0</span> bullets</p>
+                </div>
+              </div>
+              <button class="restart_button" onClick="window.location.reload();">
+                <div class="restart_text">
+                    <p>PLAY AGAIN</p>
+                </div>
+              </button>
+            </div>
+        </div>
+        <!-- <button onClick="window.location.reload();">RESTART</button> -->
+        <!-- <div class="backgrround_choose">
+            <div class="background_select">
+                <div class="background_animated"></div>
+                <div class="background_photo"></div>
+            </div>
+        </div> -->
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
