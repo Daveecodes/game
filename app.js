@@ -9,7 +9,9 @@ const modal = document.querySelector('.modal')
 // const restart = document.querySelector('.restart_button')
 
 
-
+// restart.addEventListener('click', function(){
+//   popUp.classList.remove('open')
+// })
 
 function countBullets(){
   let countBullet = table.querySelectorAll('.bullet').length
@@ -17,6 +19,8 @@ function countBullets(){
   bulletCount.textContent = countBullet
   
 }
+
+
 
 // bottomClose.addEventListener('click', function(){
 //   modal.classList.remove('open')
@@ -76,6 +80,7 @@ const randomNumbers = generateNumbers()
 for (let i = 0; i < cells.length; i++){
   let cell = cells[i]
   cell.addEventListener('click', function(){
+    cell.classList.add('animate')
     if(randomNumbers.includes(i)){
       cell.classList.add('bullet')
     }

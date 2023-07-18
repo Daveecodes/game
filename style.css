@@ -94,6 +94,19 @@ html,body{
 
 }
 
+table td.animate{
+    animation: clickAnim ease-in-out 0.3s;
+}
+
+ @keyframes clickAnim{
+     0%{
+        transform: scale(0.9);
+     }
+     100%{
+        transform: scale(1);
+     }
+}
+
 .pop_up{
     display: none;
     opacity: 0;
@@ -113,6 +126,9 @@ html,body{
     opacity: 1;
     visibility: visible;
     z-index: 10;
+    /* background-image: url(./images/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 .pop_bottom{
@@ -223,7 +239,7 @@ html,body{
     color: white;
     border-radius: 12px;
     margin-top: 30px;
-
+    z-index: 2;
 }
 
 .bullet_sum{
