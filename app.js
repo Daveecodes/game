@@ -6,6 +6,10 @@ const timeCount = document.querySelector('.time_count')
 const hurryUP = document.querySelector('.time_text')
 const bottomClose = document.querySelector('.bottom_close')
 const modal = document.querySelector('.modal')
+// const restart = document.querySelector('.restart_button')
+
+
+
 
 function countBullets(){
   let countBullet = table.querySelectorAll('.bullet').length

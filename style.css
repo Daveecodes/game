@@ -195,7 +195,6 @@ html,body{
     color: white;
     border-radius: 12px;
     margin-top: 30px;
-    z-index: -1;
     gap: 30px;
     border: none;
 }
